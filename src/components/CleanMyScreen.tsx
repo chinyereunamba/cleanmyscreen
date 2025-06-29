@@ -252,7 +252,7 @@ const CleanMyScreen: React.FC<CleanMyScreenProps> = () => {
         <motion.div 
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="absolute flex justify-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-auto z-10"
+          className="absolute flex justify-center top-6 pointer-events-auto z-10"
         >
           <div className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg">
             <h1 className="text-lg font-semibold text-gray-800 flex items-center gap-2">
