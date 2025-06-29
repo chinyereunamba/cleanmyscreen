@@ -299,6 +299,30 @@ const CleanMyScreen: React.FC<CleanMyScreenProps> = () => {
           </motion.button>
         </motion.div>
 
+        {/* Bolt.new badge */}
+        <motion.div 
+          initial={{ x: -50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="absolute bottom-6 left-6 pointer-events-auto z-10"
+        >
+          <motion.a
+            href="https://bolt.new"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.95 }}
+            className="group bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full px-4 py-2 shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-2 text-sm font-medium"
+          >
+            <div className="w-4 h-4 bg-white rounded-full flex items-center justify-center">
+              <Sparkles className="w-2.5 h-2.5 text-purple-500" />
+            </div>
+            <span className="group-hover:text-purple-100 transition-colors">
+              Made with Bolt
+            </span>
+          </motion.a>
+        </motion.div>
+
         {/* Instructions */}
         <AnimatePresence>
           {cleanPercentage === 0 && (
