@@ -317,9 +317,7 @@ const CleanMyScreen: React.FC<CleanMyScreenProps> = () => {
             <div className="w-4 h-4 bg-white rounded-full flex items-center justify-center">
               <Sparkles className="w-2.5 h-2.5 text-purple-500" />
             </div>
-            <span className="group-hover:text-purple-100 transition-colors">
-              Made with Bolt
-            </span>
+            <img src={'./bolt.new.svg'} alt="Bolt.new" className="h-4 w-auto group-hover:opacity-90 transition-opacity duration-200" />
           </motion.a>
         </motion.div>
 
