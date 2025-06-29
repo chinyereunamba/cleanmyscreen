@@ -287,7 +287,7 @@ const CleanMyScreen: React.FC<CleanMyScreenProps> = () => {
         <motion.div 
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="absolute bottom-6 right-6 pointer-events-auto z-10"
+          className="absolute bottom-6 left-6 pointer-events-auto z-10"
         >
           <motion.button
             onClick={reset}
@@ -304,7 +304,7 @@ const CleanMyScreen: React.FC<CleanMyScreenProps> = () => {
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="absolute bottom-6 left-6 pointer-events-auto z-10"
+          className="absolute bottom-6 right-6 pointer-events-auto z-10"
         >
           <motion.a
             href="https://bolt.new"
