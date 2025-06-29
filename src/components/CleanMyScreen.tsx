@@ -247,7 +247,7 @@ const CleanMyScreen: React.FC<CleanMyScreenProps> = () => {
       />
 
       {/* UI Overlay */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none w-full">
         {/* Header */}
         <motion.div 
           initial={{ y: -50, opacity: 0 }}
